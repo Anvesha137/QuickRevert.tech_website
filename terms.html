@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - QuickRevert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@300;400;500;600&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        .serif-font {
+            font-family: 'Instrument Serif', serif;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-up {
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        /* Custom Selection Color */
+        ::selection {
+            background-color: #f43f5e;
+            color: white;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        /* List Styles */
+        ol, ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Section Spacing */
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        /* Definition Lists */
+        dl {
+            margin-bottom: 1.5rem;
+        }
+
+        dt {
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        dd {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-[#fdf497]/30 via-[#fd5949]/20 to-[#d6249f]/20 text-gray-900 antialiased min-h-screen">
+    <!-- Navbar -->
+    <div class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 animate-fade-up">
+        <nav
+            class="glass-nav border border-gray-200 rounded-full pl-6 pr-2 py-2 flex items-center gap-8 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300">
+            <a href="index.html"
+                class="group flex items-center gap-2 text-sm text-gray-900 hover:text-rose-600 transition-colors">
+                <span class="font-instrument text-2xl tracking-tight font-serif italic font-medium">QuickRevert.</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-6 text-sm font-montserrat font-medium text-gray-500">
+                <a href="index.html#work" class="hover:text-rose-600 transition-colors">Features</a>
+                <a href="pricing.html" class="hover:text-rose-600 transition-colors">Pricing</a>
+                <a href="contact.html" class="hover:text-rose-600 transition-colors">Contact us</a>
+            </div>
+
+            <div class="h-4 w-px bg-gray-200 hidden md:block"></div>
+
+            <a href="https://calendar.app.google/AESCj8d5Yy2EbM8Z7"
+                class="group bg-gray-900 text-white text-sm px-5 py-2.5 rounded-full hover:bg-rose-600 hover:shadow-lg hover:shadow-rose-600/30 transition-all duration-300 flex items-center gap-2 font-montserrat font-medium">
+                Book Strategy
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-4 h-4 transition-transform group-hover:translate-x-1">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mr-auto ml-auto pt-32 pr-6 pb-20 pl-6">
+        <!-- Terms and Conditions Content -->
+        <div class="bg-white rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm">
+            <h1 class="animate-fade-up text-4xl md:text-5xl font-medium mb-6 text-gray-900">
+                Terms and Conditions
+            </h1>
+            
+            <div class="animate-fade-up delay-100">
+                <p class="text-gray-600 mb-2 font-montserrat font-medium">
+                    Effective Date: October 3, 2025
+                </p>
+                <p class="text-gray-600 mb-8 font-montserrat font-medium">
+                    Last Updated: October 3, 2025
+                </p>
+            </div>
+            
+            <div class="animate-fade-up delay-200">
+                <p class="text-gray-700 mb-8 font-montserrat font-medium">
+                    By using the services, software, and websites offered by Quickrevert Technologies ("Quickrevert," "we," "us," or "our"), you are agreeing to be bound by the following terms and conditions ("Terms of Service").
+                </p>
+                
+                <div class="section">
+                    <h2 class="text-2xl font-montserrat font-semibold text-gray-900 mb-4">1. General Acceptance and Service Modification</h2>
+                    
+                    <dl class="font-montserrat font-medium text-gray-700">
+                        <dt class="font-semibold">• Agreement to Terms</dt>
+                        <dd>Your use of our services, including but not limited to AI tools, software subscriptions, and conversational platforms (the "Service"), constitutes your binding agreement to these Terms of Service.</dd>
+                        
+                        <dt class="font-semibold">• Service & Pricing Changes</dt>
+                        <dd>Quickrevert reserves the right to modify or discontinue the Service (or any part thereof) or change the pricing plans at any time. We will provide at least 30 days' notice for any material changes to pricing plans or discontinuation of core Service features. Notice may be provided via email or a prominent post on our website.</dd>
+                        
+                        <dt class="font-semibold">• Terms Updates</dt>
+                        <dd>Quickrevert reserves the right to update and/or change these Terms of Service from time to time without prior notice for minor administrative or legal updates. Continued use of the Service after any such changes constitutes your consent.</dd>
+                        
+                        <dt class="font-semibold">• Risk</dt>
+                        <dd>Your use of the Service is at your sole risk. The Service is provided on an "as is" and "as available" basis.</dd>
+                    </dl>
+                </div>
+                
+                <div class="section">
+                    <h2 class="text-2xl font-montserrat font-semibold text-gray-900 mb-4">2. Account Terms and User Conduct</h2>
+                    
+                    <dl class="font-montserrat font-medium text-gray-700">
+                        <dt class="font-semibold">• Eligibility</dt>
+                        <dd>You must be at least 18 years old to use the Service.</dd>
+                        
+                        <dt class="font-semibold">• Registration</dt>
+                        <dd>You must provide a valid email address and any other required information to complete the sign-up process.</dd>
+                        
+                        <dt class="font-semibold">• No Automated Accounts</dt>
+                        <dd>Accounts registered by "bots" or other automated methods are not permitted.</dd>
+                        
+                        <dt class="font-semibold">• Security</dt>
+                        <dd>You are responsible for maintaining the security of your account and password. Quickrevert cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.</dd>
+                        
+                        <dt class="font-semibold">• Legal Use</dt>
+                        <dd>You may not use the Service for any illegal or unauthorized purpose. You must not, in the use of the Service, violate any laws in your jurisdiction (including but not limited to copyright laws).</dd>
+                        
+                        <dt class="font-semibold">• Abuse</dt>
+                        <dd>Verbal, physical, written, or other abuse (including threats) of any Quickrevert customer, employee, or officer will result in immediate account termination.</dd>
+                    </dl>
+                </div>
+                
+                <div class="section">
+                    <h2 class="text-2xl font-montserrat font-semibold text-gray-900 mb-4">3. Payment, Billing, and Subscription Management</h2>
+                    
+                    <dl class="font-montserrat font-medium text-gray-700">
+                        <dt class="font-semibold">• Payment Requirement</dt>
+                        <dd>A valid credit card, debit card, or bank account is required for all paid plans. Free accounts do not require payment information.</dd>
+                        
+                        <dt class="font-semibold">• Billing Cycle</dt>
+                        <dd>The Service is billed in advance on a monthly or yearly basis, as selected by you.</dd>
+                        
+                        <dt class="font-semibold">• Annual Commitments</dt>
+                        <dd>If you subscribe to an annual plan, this constitutes a one-year commitment.</dd>
+                        
+                        <dd class="ml-8">Upgrades: Upgrades to a higher plan during an annual cycle will be charged the prorated price difference for the remainder of the year.</dd>
+                        
+                        <dd class="ml-8">Downgrades: Downgrade requests on an annual plan will be accepted but will not take effect until the 12-month term is complete.</dd>
+                        
+                        <dt class="font-semibold">• Refund Policy (No Refunds)</dt>
+                        <dd>Quickrevert does not provide refunds for fees related to accounts, including prepaid monthly or annual subscriptions, regardless of usage. All fees are non-refundable.</dd>
+                        
+                        <dt class="font-semibold">• Cancellation</dt>
+                        <dd>You can cancel your account at any time. Cancellation will take effect immediately, but no refunds will be issued for the remaining unused portion of the subscription period.</dd>
+                    </dl>
+                </div>
+                
+                <div class="section">
+                    <h2 class="text-2xl font-montserrat font-semibold text-gray-900 mb-4">4. User Content and Data Rights</h2>
+                    
+                    <dl class="font-montserrat font-medium text-gray-700">
+                        <dt class="font-semibold">• Ownership of Input/Output</dt>
+                        <dd>You retain all ownership rights to the content, data, and information you input into the Service ("User Content") and the output generated specifically for you by the Service.</dd>
+                        
+                        <dt class="font-semibold">• License to Quickrevert</dt>
+                        <dd>By submitting User Content, you grant Quickrevert a worldwide, non-exclusive, royalty-free license to use, host, store, copy, modify, and display your User Content solely as necessary to provide, maintain, improve, and develop the Service, including training our underlying AI models and algorithms.</dd>
+                        
+                        <dt class="font-semibold">• AI Model Training</dt>
+                        <dd>Quickrevert may use aggregated, anonymized, or de-identified portions of User Content to improve the performance, safety, and accuracy of its AI models. Where required by law or contract, we will provide you with controls to opt-out of the use of your data for this purpose.</dd>
+                    </dl>
+                </div>
+                
+                <div class="section">
+                    <h2 class="text-2xl font-montserrat font-semibold text-gray-900 mb-4">5. Disclaimer of Warranties and Limitation of Liability</h2>
+                    
+                    <dl class="font-montserrat font-medium text-gray-700">
+                        <dt class="font-semibold">• Disclaimer</dt>
+                        <dd>Quickrevert makes no express or implied warranties with respect to the Service or its content. We expressly disclaim all warranties of any kind, including but not limited to, implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the functions performed by the Service will be uninterrupted, timely, secure, or error-free.</dd>
+                        
+                        <dt class="font-semibold">• Limitation of Liability</dt>
+                        <dd>Quickrevert will not be liable for any indirect, consequential, special, exemplary, or other indirect damages, including for loss of profits, data, or goodwill.</dd>
+                        
+                        <dt class="font-semibold">• Liability Cap</dt>
+                        <dd>Our total maximum liability to you for all claims arising under or in connection with these Terms of Service shall be limited for all such claims in aggregate to an amount equal to one hundred per cent (100%) of the total fees paid by you to us in the successive twelve (12) month period prior to the date of the most recent claim. In jurisdictions that do not allow the exclusion or limitation of liability for consequential or incidental damages, Quickrevert's liability is limited to the greatest extent permitted by law, but shall in no event exceed $100 USD.</dd>
+                    </dl>
+                </div>
+                
+                <div class="section">
+                    <h2 class="text-2xl font-montserrat font-semibold text-gray-900 mb-4">6. Indemnification</h2>
+                    <p class="text-gray-700 font-montserrat font-medium">
+                        You agree to indemnify, defend, and hold harmless Quickrevert, its employees, agents, and any third-party providers from and against all claims, losses, expenses, damages, and costs (including reasonable attorneys' fees) resulting from or arising out of your use, misuse, or inability to use the Service, the content, or any violation by you of this Agreement.
+                    </p>
+                </div>
+                
+                <div class="section">
+                    <h2 class="text-2xl font-montserrat font-semibold text-gray-900 mb-4">7. Governing Law</h2>
+                    <p class="text-gray-700 font-montserrat font-medium">
+                        These Terms of Service shall be governed by and construed in accordance with the laws of the State of Delhi, India without regard to its conflict of law provisions.
+                    </p>
+                </div>
+                
+                <div class="section">
+                    <h2 class="text-2xl font-montserrat font-semibold text-gray-900 mb-4">8. Contact Us</h2>
+                    <p class="text-gray-700 mb-4 font-montserrat font-medium">
+                        Questions or concerns about the Terms of Service should be sent to:
+                    </p>
+                    
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <p class="text-gray-900 font-montserrat font-semibold text-lg mb-2">Quickrevert Technologies</p>
+                        <p class="text-gray-700 font-montserrat font-medium">Email: <a href="mailto:connect@quickrevert.tech" class="text-rose-600 hover:underline">connect@quickrevert.tech</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Home CTA -->
+        <div class="text-center mt-12">
+            <a href="index.html" 
+               class="inline-flex items-center gap-2 text-gray-600 hover:text-rose-600 font-montserrat font-semibold transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 19-7-7 7-7"></path>
+                    <path d="M19 12H5"></path>
+                </svg>
+                Back to Home
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <span class="font-instrument text-2xl tracking-tight font-serif italic font-medium text-gray-900">QuickRevert.</span>
+                    </a>
+                    <p class="text-gray-600 mb-6 font-montserrat font-medium">
+                        AI-driven automation solutions for modern brands.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/quickrevert_official/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-rose-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/quick-revert-tech/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-rose-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-montserrat font-semibold text-gray-900 mb-6">Product</h3>
+                    <ul class="space-y-4">
+                        <li><a href="index.html#work" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Features</a></li>
+                        <li><a href="pricing.html" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Pricing</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Integrations</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Updates</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-montserrat font-semibold text-gray-900 mb-6">Resources</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Blog</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Documentation</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Guides</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-montserrat font-semibold text-gray-900 mb-6">Company</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">About us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Careers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Partners</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-montserrat font-semibold text-gray-900 mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="text-gray-600 font-montserrat font-medium">Delhi, India</li>
+                        <li><a href="mailto:connectquickrevert@gmail.com" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">connectquickrevert@gmail.com</a></li>
+                        <li><a href="tel:+917891199199" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">+91 7891199199</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-100 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-600 font-montserrat font-medium">© 2025 QuickRevert. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">   
+                    <a href="privacy.html" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-rose-600 transition-colors font-montserrat font-medium">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animation on scroll for elements
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-fade-up').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>
