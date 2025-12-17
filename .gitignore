@@ -73,7 +73,7 @@ Thumbs.db
 
 # Log files
 *.log
-*.png
+
 # Database files
 *.sqlite
 *.db
