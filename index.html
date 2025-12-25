@@ -112,9 +112,36 @@
             mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
             -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
         }
+
+        /* Horizontal Scroll Logic */
+        .horizontal-section {
+            position: relative;
+            height: 400vh; /* Determines scroll length */
+        }
+        
+        .horizontal-wrapper {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        
+        .cards-track {
+            display: flex;
+            gap: 4vw;
+            padding-left: 10vw;
+            will-change: transform; /* Performance optimization */
+        }
+
+        /* Image hover effect */
+        .group:hover img {
+            transform: scale(1.1);
+        }
     </style>
 </head>
-
 <body class="bg-gradient-to-br from-[#fdf497]/30 via-[#fd5949]/20 to-[#d6249f]/20 text-gray-900 antialiased overflow-x-hidden min-h-screen">
 
     <!-- Navbar -->
@@ -150,9 +177,7 @@
     </div>
 
     <!-- Main Container -->
-    <main class="max-w-7xl mr-auto ml-auto pt-32 pr-6 pb-20 pl-6">
-
-        <!-- Hero Section -->
+    <main class="max-w-7xl mr-auto ml-auto pt-24 pr-6 pb-12 pl-6">        <!-- Hero Section -->
         <div
             class="bg-white rounded-[3rem] p-10 md:p-14 lg:p-16 shadow-sm border border-gray-100 relative overflow-hidden group transition-shadow duration-700">
             <!-- Subtle Background Grid -->
@@ -266,8 +291,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <p class="text-sm font-semibold text-gray-900 font-montserrat">+240% ROI Increase
-                                    </p>
+                                    <p class="text-sm font-semibold text-gray-900 font-montserrat">Founder-Led Setup & Strategy                                    </p>
                                     <p class="text-xs text-gray-500 font-montserrat">Across client portfolios Q1</p>
                                 </div>
                             </div>
@@ -421,10 +445,70 @@
             </div>
         </div>
 
-        <!-- Featured Case Studies -->
-        <div id="work" class="py-24">
-            <h2
-                class="text-4xl md:text-5xl text-center mb-16 tracking-tight text-gray-900 font-montserrat font-semibold">
+        <!-- 4. FACILITIES (Horizontal Scroll) -->
+        <section id="facilities" class="horizontal-section bg-gray-900 text-white">
+            <div class="horizontal-wrapper">
+                
+                <div class="absolute top-12 left-6 md:left-20 z-10 mix-blend-difference pointer-events-none">
+                    <span class="text-xs font-montserrat uppercase tracking-[0.3em] opacity-60">Facilities</span>
+                    <h2 class="font-montserrat text-4xl md:text-5xl font-medium mt-2 tracking-tight">WORLD CLASS</h2>
+                </div>
+
+                <div class="cards-track" id="h-track">
+                    
+                    <!-- Introduction Card -->
+                    <div class="flex-shrink-0 w-[80vw] md:w-[30vw] h-[60vh] flex flex-col justify-center pr-20">
+                        <p class="font-serif text-3xl md:text-4xl leading-snug">
+                            "Luxury lies in the details. From the grain of the court surface to the scent of the changing rooms."
+                        </p>
+                        <div class="w-20 h-px bg-rose-500 mt-8"></div>
+                    </div>
+
+                    <!-- Facility 1 -->
+                    <div class="flex-shrink-0 relative w-[85vw] md:w-[45vw] h-[70vh] group overflow-hidden border border-white/10 hover-trigger cursor-none" data-cursor="EXPLORE">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 opacity-60 group-hover:opacity-100 ease-[cubic-bezier(0.25,1,0.5,1)]" alt="Courts">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-90 pointer-events-none"></div>
+                        <div class="absolute bottom-0 left-0 p-10 transform transition-transform duration-500 group-hover:-translate-y-2">
+                            <span class="font-mono text-rose-500 text-xs mb-2 block">01</span>
+                            <h3 class="font-montserrat text-4xl md:text-5xl font-medium tracking-tight mb-4">CHAMPIONSHIP<br>COURTS</h3>
+                            <p class="opacity-0 group-hover:opacity-70 transition-opacity duration-500 text-sm max-w-sm leading-relaxed translate-y-4 group-hover:translate-y-0 font-montserrat">
+                                WPT Standard. Mondo Supercourt XN turf. 12m clear ceiling height.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Facility 2 -->
+                    <div class="flex-shrink-0 relative w-[85vw] md:w-[45vw] h-[70vh] group overflow-hidden border border-white/10 hover-trigger cursor-none" data-cursor="REFORM">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 opacity-60 group-hover:opacity-100 ease-[cubic-bezier(0.25,1,0.5,1)]" alt="Pilates">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-90 pointer-events-none"></div>
+                        <div class="absolute bottom-0 left-0 p-10 transform transition-transform duration-500 group-hover:-translate-y-2">
+                            <span class="font-mono text-rose-500 text-xs mb-2 block">02</span>
+                            <h3 class="font-montserrat text-4xl md:text-5xl font-medium tracking-tight mb-4">PILATES<br>STUDIO</h3>
+                            <p class="opacity-0 group-hover:opacity-70 transition-opacity duration-500 text-sm max-w-sm leading-relaxed translate-y-4 group-hover:translate-y-0 font-montserrat">
+                                12 Reformers. Natural light. Sound-dampened acoustics for focus.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Facility 3 -->
+                    <div class="flex-shrink-0 relative w-[85vw] md:w-[45vw] h-[70vh] group overflow-hidden border border-white/10 hover-trigger cursor-none" data-cursor="RELAX">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 opacity-60 group-hover:opacity-100 ease-[cubic-bezier(0.25,1,0.5,1)]" alt="Spa">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-90 pointer-events-none"></div>
+                        <div class="absolute bottom-0 left-0 p-10 transform transition-transform duration-500 group-hover:-translate-y-2">
+                            <span class="font-mono text-rose-500 text-xs mb-2 block">03</span>
+                            <h3 class="font-montserrat text-4xl md:text-5xl font-medium tracking-tight mb-4">RECOVERY<br>&amp; SPA</h3>
+                            <p class="opacity-0 group-hover:opacity-70 transition-opacity duration-500 text-sm max-w-sm leading-relaxed translate-y-4 group-hover:translate-y-0 font-montserrat">
+                                Cold plunge. Infrared sauna. Physio treatment rooms.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-[20vw]"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Case Studies -->        <div id="work" class="py-12">            <h2                class="text-4xl md:text-5xl text-center mb-16 tracking-tight text-gray-900 font-montserrat font-semibold">
                 What it does (so you don’t have to)
             </h2>
             <div class="flex flex-col gap-6 max-w-4xl mx-auto relative">
@@ -663,9 +747,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-        </div>
 
         <!-- About Section -->
         <div id="about" class="py-24">
@@ -1431,7 +1512,6 @@
                     <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                 </svg>
             </a>
-        </div>
 
     </main>
 
@@ -1515,8 +1595,38 @@
 
     <script>
         lucide.createIcons();
-    </script>
 
-</body>
+        // Horizontal Scroll Logic
+        const track = document.getElementById('h-track');
+        const section = document.querySelector('.horizontal-section');
+
+        window.addEventListener('scroll', () => {
+            const offsetTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const windowWidth = window.innerWidth;
+
+            // Check if we are inside the scrollable area
+            if (scrollY >= offsetTop && scrollY <= offsetTop + sectionHeight - windowHeight) {
+                // Calculate percentage of scroll through the section
+                const percentage = (scrollY - offsetTop) / (sectionHeight - windowHeight);
+                
+                // Calculate how far to move the track left
+                // track.scrollWidth - windowWidth gives the total amount of overflow to scroll
+                const moveAmount = track.scrollWidth - windowWidth;
+                
+                // Apply transform
+                track.style.transform = `translateX(-${percentage * moveAmount}px)`;
+            } else if (scrollY < offsetTop) {
+                // Reset to start if above
+                track.style.transform = `translateX(0px)`;
+            } else if (scrollY > offsetTop + sectionHeight - windowHeight) {
+                // Lock to end if below
+                const moveAmount = track.scrollWidth - windowWidth;
+                track.style.transform = `translateX(-${moveAmount}px)`;
+            }
+        });
+    </script></body>
 
 </html>
